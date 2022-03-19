@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/only-wl/openwrt-life.git
+  REPO_URL: -b openwrt-21.02 https://github.com/ikghx/openwrt-life.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
