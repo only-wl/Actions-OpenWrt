@@ -18,7 +18,7 @@ sed -i 's/192.168.1.1/192.168.199.1/g' package/base-files/files/bin/config_gener
 sed -i 's/OpenWrt/HC5962/g' package/base-files/files/bin/config_generate 
 
 # Modify ssidname
-sed -i 's/OpenWrt/HiWiFi/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/OpenWrt/HiWiFi/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 修改版本号
 sed -i "s/OpenWrt /Onlywl $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
