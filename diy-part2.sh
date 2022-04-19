@@ -30,11 +30,11 @@ sed -i "s/OpenWrt /Onlywl $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lea
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 
 # Add kernel build user
-[ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_USER="Onlywl"' >>.config ||
-    sed -i 's@\(CONFIG_KERNEL_BUILD_USER=\).*@\1$"Onlywl"@' .config
+#[ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
+    #echo 'CONFIG_KERNEL_BUILD_USER="Onlywl"' >>.config ||
+    #sed -i 's@\(CONFIG_KERNEL_BUILD_USER=\).*@\1$"Onlywl"@' .config
 
 # Add kernel build domain
-[ -z $(grep "CONFIG_KERNEL_BUILD_DOMAIN=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_DOMAIN="GitHub Actions"' >>.config ||
-    sed -i 's@\(CONFIG_KERNEL_BUILD_DOMAIN=\).*@\1$"GitHub Actions"@' .config
+#[ -z $(grep "CONFIG_KERNEL_BUILD_DOMAIN=" .config) ] &&
+    #echo 'CONFIG_KERNEL_BUILD_DOMAIN="GitHub Actions"' >>.config ||
+    #sed -i 's@\(CONFIG_KERNEL_BUILD_DOMAIN=\).*@\1$"GitHub Actions"@' .config
